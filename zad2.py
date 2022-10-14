@@ -56,12 +56,12 @@ plt.title('Binominal probability mass function')
 plt.show()
 
 # 6 ============================================
-x = np.linspace(0, 5, 20)
-val_range = np.arange(0,5,0.5)
+x = np.linspace(0, 1, 20)
+val_range = np.arange(0, 2.1, 0.5)
 for val in val_range:
     rv = stats.poisson(val)
     plt.plot(x, rv.pmf(x), label=f'{val}')
-    plt.scatter(x, rv.pmf(x),marker='x')
+    plt.scatter(x, rv.pmf(x), marker='x')
 plt.title('Poisson probability mass function')
 plt.legend()
 plt.show()
